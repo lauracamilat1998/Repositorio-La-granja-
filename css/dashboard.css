@@ -1,0 +1,495 @@
+body {
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f8dc;
+
+    color: #333;
+
+}
+
+.dashboard {
+
+    display: flex;
+
+    min-height: 100vh;
+
+}
+
+.sidebar {
+
+    width: 190px;
+
+    min-height: 100vh;
+
+    background-color: #5c9f3f;
+
+    color: white;
+
+    flex-shrink: 0;
+
+}
+
+.logo-container {
+
+    text-align: center;
+
+    padding: 12px 5px;
+
+    background-color: white;
+
+}
+
+
+.logo {
+
+    width: 115px;
+
+    max-width: 100%;
+
+}
+
+
+.menu {
+
+    padding-top: 15px;
+
+}
+
+
+.menu-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px 16px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+
+}
+
+
+.menu-item i {
+
+    font-size: 17px;
+
+}
+
+
+.menu-item:hover {
+
+    background-color: #4b8833;
+
+    color: white;
+
+}
+
+
+.menu-item.active {
+
+    background-color: #4b8833;
+
+}
+
+.main-content {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+.topbar {
+
+    height: 65px;
+
+    background-color: #f7fbdc;
+
+    border-bottom: 1px solid #d9dfb4;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding: 0 35px;
+
+}
+
+
+.topbar-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+
+.topbar-icons > i {
+
+    font-size: 21px;
+
+    color: #333;
+
+}
+
+
+.user-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.2;
+
+}
+
+
+.user-info strong {
+
+    font-size: 13px;
+
+}
+
+
+.user-info small {
+
+    font-size: 11px;
+
+}
+
+.content {
+
+    padding: 20px 25px;
+
+}
+
+.welcome {
+
+    border-bottom: 1px solid #d9dfb4;
+
+    margin-bottom: 20px;
+
+}
+
+
+.welcome h5 {
+
+    margin-bottom: 3px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+}
+
+
+.welcome p {
+
+    margin-bottom: 12px;
+
+    font-size: 13px;
+
+}
+
+.summary-card {
+
+    min-height: 120px;
+
+    padding: 16px;
+
+    border: 1px solid #b7c67a;
+
+    border-radius: 6px;
+
+}
+
+
+.summary-card h6 {
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+
+    font-weight: bold;
+
+}
+
+
+.summary-card > span {
+
+    font-size: 11px;
+
+}
+
+
+.products {
+
+    background-color: #e9f5a8;
+
+}
+
+
+.lots {
+
+    background-color: #dff2dc;
+
+}
+
+
+.warning {
+
+    background-color: #fff1b8;
+
+}
+
+
+.card-number {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+}
+
+
+.card-number i {
+
+    font-size: 25px;
+
+}
+
+.quick-section {
+
+    margin-top: 25px;
+
+}
+
+
+.quick-section h6 {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+
+.quick-button {
+
+    width: 100%;
+
+    min-height: 60px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 5px;
+
+    padding: 10px 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.quick-button i {
+
+    font-size: 19px;
+
+}
+
+
+.quick-button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+.production {
+
+    background-color: #f4f6d5;
+
+}
+
+
+.register {
+
+    background-color: #dcefd7;
+
+}
+
+
+.exit {
+
+    background-color: #ffe0a8;
+
+}
+
+
+.traceability {
+
+    background-color: #d7e4ff;
+
+}
+
+
+/* =================================
+   INFORMACIÓN DEL SISTEMA
+================================= */
+
+.system-section {
+
+    margin-top: 25px;
+
+}
+
+
+.system-section h6 {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+
+.system-card {
+
+    background-color: white;
+
+    border: 1px solid #d1d6b5;
+
+    border-radius: 6px;
+
+    padding: 18px;
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+.system-item {
+
+    flex: 1;
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.system-item > i {
+
+    font-size: 22px;
+
+    color: #5c9f3f;
+
+}
+
+
+.system-item strong {
+
+    font-size: 12px;
+
+}
+
+
+.system-item p {
+
+    font-size: 10px;
+
+    margin-top: 5px;
+
+    margin-bottom: 0;
+
+    line-height: 1.4;
+
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+
+        width: 130px;
+
+    }
+
+
+    .menu-item {
+
+        font-size: 10px;
+
+        padding: 10px 8px;
+
+    }
+
+
+    .menu-item i {
+
+        font-size: 14px;
+
+    }
+
+
+    .content {
+
+        padding: 15px;
+
+    }
+
+
+    .topbar {
+
+        padding: 0 15px;
+
+    }
+
+
+    .system-card {
+
+        flex-direction: column;
+
+    }
+
+}

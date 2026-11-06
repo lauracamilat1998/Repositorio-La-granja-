@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - La Granja</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo La Granja" class="logo">
+            </div>
+
+            <nav class="menu">
+
+                <a href="dashboard.html" class="menu-item active">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="inventario.html" class="menu-item">
+                    <i class="bi bi-box-seam"></i>
+                    <span>Inventario</span>
+                </a>
+
+                <a href="registrar-produccion.html" class="menu-item">
+                    <i class="bi bi-gear"></i>
+                    <span>Producción</span>
+                </a>
+
+                <a href="trazabilidad.html" class="menu-item">
+                    <i class="bi bi-upc-scan"></i>
+                    <span>Trazabilidad</span>
+                </a>
+
+                <a href="trazabilidad.html" class="menu-item">
+                    <i class="bi bi-file-earmark-bar-graph"></i>
+                    <span>Reportes</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div class="topbar-icons">
+                    <i class="bi bi-bell"></i>
+                    <i class="bi bi-person-circle"></i>
+
+                    <div class="user-info">
+                        <strong>Administrador</strong>
+                        <small>admin</small>
+                    </div>
+                </div>
+
+            </header>
+
+            <div class="content">
+
+                <div class="welcome">
+                    <h5>BIENVENIDO, ADMINISTRADOR</h5>
+                    <p>Panel de control del sistema</p>
+                </div>
+
+                <div class="row g-3">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="summary-card products">
+                            <h6>Productos en inventario</h6>
+
+                            <div class="card-number">
+                                <span>158</span>
+                                <i class="bi bi-box-seam"></i>
+                            </div>
+
+                            <span>Total de productos registrados</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="summary-card lots">
+                            <h6>Lotes activos</h6>
+
+                            <div class="card-number">
+                                <span>48</span>
+                                <i class="bi bi-file-earmark-text"></i>
+                            </div>
+
+                            <span>Lotes actualmente registrados</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="summary-card warning">
+                            <h6>Productos próximos a vencer</h6>
+
+                            <div class="card-number">
+                                <span>7</span>
+                                <i class="bi bi-exclamation-triangle"></i>
+                            </div>
+
+                            <span>Productos próximos a vencimiento</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <section class="quick-section">
+
+                    <h6>ACCESO RÁPIDO</h6>
+
+                    <div class="row g-3">
+
+                        <div class="col-lg-3 col-md-6">
+                            <button
+                                type="button"
+                                class="quick-button production"
+                                onclick="irAPantalla('Registrar-producto.html')"
+                            >
+                                <span>Registrar producto</span>
+                                <i class="bi bi-box-arrow-in-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <button
+                                type="button"
+                                class="quick-button register"
+                                onclick="irAPantalla('registrar-produccion.html')"
+                            >
+                                <span>Registrar producción</span>
+                                <i class="bi bi-clipboard-plus"></i>
+                            </button>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <button
+                                type="button"
+                                class="quick-button exit"
+                                onclick="irAPantalla('salida-productos.html')"
+                            >
+                                <span>Registrar salida</span>
+                                <i class="bi bi-box-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <button
+                                type="button"
+                                class="quick-button traceability"
+                                onclick="irAPantalla('trazabilidad.html')"
+                            >
+                                <span>Consultar trazabilidad</span>
+                                <i class="bi bi-qr-code-scan"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="system-section">
+
+                    <h6>INFORMACIÓN DEL SISTEMA</h6>
+
+                    <div class="system-card">
+
+                        <div class="system-item">
+                            <i class="bi bi-shield-check"></i>
+
+                            <div>
+                                <strong>Sistema de trazabilidad</strong>
+                                <p>
+                                    Control y seguimiento de los productos
+                                    registrados en el sistema.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="system-item">
+                            <i class="bi bi-database-check"></i>
+
+                            <div>
+                                <strong>Control de inventario</strong>
+                                <p>
+                                    Gestión de productos, cantidades,
+                                    lotes y fechas de vencimiento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="system-item">
+                            <i class="bi bi-graph-up"></i>
+
+                            <div>
+                                <strong>Reportes</strong>
+                                <p>
+                                    Consulta de información para apoyar
+                                    la gestión del establecimiento.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

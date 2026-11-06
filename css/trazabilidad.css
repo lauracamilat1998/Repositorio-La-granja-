@@ -1,0 +1,495 @@
+body {
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f3f8d9;
+
+    color: #333;
+
+}
+
+.dashboard {
+
+    display: flex;
+
+    min-height: 100vh;
+
+}
+
+.sidebar {
+
+    width: 170px;
+
+    min-height: 100vh;
+
+    background-color: #5c9f3f;
+
+    color: white;
+
+    flex-shrink: 0;
+
+}
+
+.logo-container {
+
+    background-color: white;
+
+    text-align: center;
+
+    padding: 5px;
+
+}
+
+
+.logo {
+
+    width: 105px;
+
+}
+
+.menu {
+
+    padding-top: 8px;
+
+}
+
+
+.menu-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 11px 12px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+}
+
+
+.menu-item i {
+
+    font-size: 15px;
+
+}
+
+
+.menu-item:hover {
+
+    background-color: #4d8b34;
+
+    color: white;
+
+}
+
+
+.menu-item.active {
+
+    background-color: #4d8b34;
+
+}
+
+.main-content {
+
+    flex: 1;
+
+}
+
+.topbar {
+
+    height: 55px;
+
+    background-color: #f7fbdc;
+
+    border-bottom: 1px solid #dce3bb;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding: 0 35px;
+
+}
+
+
+.topbar-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+}
+
+
+.topbar-icons > i {
+
+    font-size: 18px;
+
+}
+
+
+.user-icon {
+
+    color: #765bd5;
+
+}
+
+
+.user-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.1;
+
+}
+
+
+.user-info strong {
+
+    font-size: 10px;
+
+}
+
+
+.user-info small {
+
+    font-size: 10px;
+
+}
+
+.content {
+
+    padding: 10px 15px;
+
+}
+
+.page-title {
+
+    margin-bottom: 8px;
+
+}
+
+
+.page-title h5 {
+
+    font-size: 10px;
+
+    font-weight: normal;
+
+    margin: 0;
+
+}
+
+.search-section {
+
+    background-color: white;
+
+    border: 1px solid #d4d9c2;
+
+    padding: 8px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.search-section h6 {
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    margin: 0 0 6px 0;
+
+}
+
+
+.search-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.search-row .form-control {
+
+    height: 25px;
+
+    font-size: 9px;
+
+    max-width: 70%;
+
+    border-radius: 2px;
+
+}
+
+
+.search-row .form-control::placeholder {
+
+    color: #555;
+
+}
+
+
+.search-button {
+
+    height: 25px;
+
+    width: 100px;
+
+    background-color: #65ad4b;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 2px;
+
+    font-size: 9px;
+
+}
+
+
+.search-button:hover {
+
+    background-color: #528f3d;
+
+}
+
+.product-information {
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+
+    background-color: white;
+
+    border: 1px solid #d5d9c5;
+
+    margin-bottom: 5px;
+
+}
+
+
+.information-column {
+
+    padding: 10px;
+
+    border-right: 1px solid #ddd;
+
+}
+
+
+.information-column:last-child {
+
+    border-right: none;
+
+}
+
+
+.information-item {
+
+    margin-bottom: 10px;
+
+}
+
+
+.information-item:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.information-item span {
+
+    display: block;
+
+    font-size: 9px;
+
+    margin-bottom: 2px;
+
+}
+
+
+.information-item strong {
+
+    display: block;
+
+    font-size: 9px;
+
+    font-weight: normal;
+
+}
+
+
+.information-item .available {
+
+    font-weight: bold;
+
+    color: #1d5f1d;
+
+}
+================================= */
+
+.history-section {
+
+    margin-top: 5px;
+
+}
+
+
+.history-section h6 {
+
+    color: #65a841;
+
+    font-size: 10px;
+
+    margin: 0 0 5px 0;
+
+}
+
+
+.table-container {
+
+    background-color: white;
+
+    border: 1px solid #d2d6c0;
+
+}
+
+
+.history-table {
+
+    margin: 0;
+
+    font-size: 9px;
+
+}
+
+
+.history-table thead th {
+
+    background-color: #dfe0d8;
+
+    font-weight: normal;
+
+    padding: 5px;
+
+    border-color: #c9c9c9;
+
+}
+
+
+.history-table tbody td {
+
+    padding: 5px;
+
+    border-color: #d0d0d0;
+
+    vertical-align: middle;
+
+}
+
+.movement {
+
+    font-weight: normal;
+
+}
+
+
+.entry {
+
+    color: #297329;
+
+}
+
+
+.exit {
+
+    color: #a33232;
+
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+
+        width: 130px;
+
+    }
+
+
+    .menu-item {
+
+        font-size: 9px;
+
+        padding: 9px 6px;
+
+    }
+
+
+    .content {
+
+        padding: 10px;
+
+    }
+
+
+    .product-information {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .search-row {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 5px;
+
+    }
+
+
+    .search-row .form-control {
+
+        max-width: 100%;
+
+    }
+
+
+    .search-button {
+
+        width: 100%;
+
+    }
+
+
+    .table-container {
+
+        overflow-x: auto;
+
+    }
+
+}

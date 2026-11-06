@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consulta de Inventario - La Granja</title>
+
+    
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    
+    <link
+        rel="stylesheet"
+        href="css/inventario.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="logo-container">
+
+                <img
+                    src="img/logo.png"
+                    alt="Logo La Granja"
+                    class="logo"
+                >
+
+            </div>
+
+           
+<nav class="menu">
+
+    <a
+        href="dashboard.html"
+        class="menu-item"
+    >
+        <i class="bi bi-house-door"></i>
+        <span>Volver al dashboard</span>
+    </a>
+
+    <a
+        href="inventario.html"
+        class="menu-item active"
+    >
+        <i class="bi bi-card-list"></i>
+        <span>Inventario</span>
+    </a>
+
+    <a
+        href="registrar-produccion.html"
+        class="menu-item"
+    >
+        <i class="bi bi-cart3"></i>
+        <span>Producción</span>
+    </a>
+
+    <a
+        href="trazabilidad.html"
+        class="menu-item"
+    >
+        <i class="bi bi-qr-code-scan"></i>
+        <span>Trazabilidad</span>
+    </a>
+
+    <a
+        href="trazabilidad.html"
+        class="menu-item"
+    >
+        <i class="bi bi-card-list"></i>
+        <span>Reportes</span>
+    </a>
+
+</nav>
+
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+
+                <div class="user-area">
+
+                    <i class="bi bi-bell"></i>
+
+                    <i class="bi bi-person-lines-fill"></i>
+
+
+                    <div class="user-info">
+
+                        <strong>
+                            Administrador
+                        </strong>
+
+                        <span>
+                            admin
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+            <div class="content">
+
+                <div class="page-header">
+
+
+                    <div>
+
+                        <span class="breadcrumb-text">
+                            Inventario
+                        </span>
+
+                        <span class="separator">
+                            &gt;
+                        </span>
+
+                        <strong>
+                            Consulta de inventario
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+                <div class="filters">
+
+                    <div class="search-box">
+
+                        <i class="bi bi-search"></i>
+
+                        <input
+                            type="text"
+                            placeholder="Search"
+                        >
+
+                    </div>
+
+                    <select class="filter-select">
+
+                        <option>
+                            todas las categorías
+                        </option>
+
+                        <option>
+                            Carnes
+                        </option>
+
+                        <option>
+                            Verduras
+                        </option>
+
+                        <option>
+                            Granos
+                        </option>
+
+                        <option>
+                            Lácteos
+                        </option>
+
+                        <option>
+                            Salsas
+                        </option>
+
+                    </select>
+
+                    <select class="filter-select status-filter">
+
+                        <option>
+                            Estado: Todos
+                        </option>
+
+                        <option>
+                            Disponible
+                        </option>
+
+                        <option>
+                            Por vencer
+                        </option>
+
+                        <option>
+                            Vencido
+                        </option>
+
+                    </select>
+
+                    <a
+                        href="registrar-producto.html"
+                        class="new-product"
+                    >
+
+                        <i class="bi bi-plus-lg"></i>
+
+                        <span>
+                            Nuevo producto
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+                <div class="table-container">
+
+
+                    <table class="inventory-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Producto
+                                </th>
+
+                                <th>
+                                    Categoría
+                                </th>
+
+                                <th>
+                                    Lote
+                                </th>
+
+                                <th>
+                                    Cantidad
+                                </th>
+
+                                <th>
+                                    Unidad
+                                </th>
+
+                                <th>
+                                    Vencimiento
+                                </th>
+
+                                <th>
+                                    Estado
+                                </th>
+
+                                <th>
+                                    Acciones
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+
+                            <!-- PRODUCTO 1 -->
+
+                            <tr>
+
+                                <td>
+                                    Pollo pechuga
+                                </td>
+
+                                <td>
+                                    Carnes
+                                </td>
+
+                                <td>
+                                    L-250709-01
+                                </td>
+
+                                <td>
+                                    20
+                                </td>
+
+                                <td>
+                                    kg
+                                </td>
+
+                                <td>
+                                    01/07/2026
+                                </td>
+
+                                <td>
+
+                                    <span class="status available">
+                                        Disponible
+                                    </span>
+
+                                </td>
+
+                                <td class="actions">
+
+                                    <i
+                                        class="bi bi-eye"
+                                        title="Ver"
+                                    ></i>
+
+                                    <i
+                                        class="bi bi-pencil-square"
+                                        title="Editar"
+                                    ></i>
+
+                                    <i
+                                        class="bi bi-trash3"
+                                        title="Eliminar"
+                                    ></i>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Papa criolla
+                                </td>
+
+                                <td>
+                                    Verduras
+                                </td>
+
+                                <td>
+                                    L-250709-03
+                                </td>
+
+                                <td>
+                                    15
+                                </td>
+
+                                <td>
+                                    kg
+                                </td>
+
+                                <td>
+                                    02/07/2026
+                                </td>
+
+                                <td>
+
+                                    <span class="status available">
+                                        Disponible
+                                    </span>
+
+                                </td>
+
+                                <td class="actions">
+
+                                    <i class="bi bi-eye"></i>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash3"></i>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Tomate
+                                </td>
+
+                                <td>
+                                    Verduras
+                                </td>
+
+                                <td>
+                                    L-250706-04
+                                </td>
+
+                                <td>
+                                    8
+                                </td>
+
+                                <td>
+                                    kg
+                                </td>
+
+                                <td>
+                                    08/07/2026
+                                </td>
+
+                                <td>
+
+                                    <span class="status available">
+                                        Disponible
+                                    </span>
+
+                                </td>
+
+                                <td class="actions">
+
+                                    <i class="bi bi-eye"></i>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash3"></i>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Arroz
+                                </td>
+
+                                <td>
+                                    Granos
+                                </td>
+
+                                <td>
+                                    L-250706-06
+                                </td>
+
+                                <td>
+                                    30
+                                </td>
+
+                                <td>
+                                    kg
+                                </td>
+
+                                <td>
+                                    07/07/2026
+                                </td>
+
+                                <td>
+
+                                    <span class="status warning">
+                                        Por vencer
+                                    </span>
+
+                                </td>
+
+                                <td class="actions">
+
+                                    <i class="bi bi-eye"></i>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash3"></i>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Leche entera
+                                </td>
+
+                                <td>
+                                    Lácteos
+                                </td>
+
+                                <td>
+                                    L-250706-07
+                                </td>
+
+                                <td>
+                                    10
+                                </td>
+
+                                <td>
+                                    L
+                                </td>
+
+                                <td>
+                                    04/07/2026
+                                </td>
+
+                                <td>
+
+                                    <span class="status warning">
+                                        Por vencer
+                                    </span>
+
+                                </td>
+
+                                <td class="actions">
+
+                                    <i class="bi bi-eye"></i>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash3"></i>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Salsa napolitana
+                                </td>
+
+                                <td>
+                                    Salsas
+                                </td>
+
+                                <td>
+                                    L-250706-05
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+                                    kg
+                                </td>
+
+                                <td>
+                                    06/07/2026
+                                </td>
+
+                                <td>
+
+                                    <span class="status available">
+                                        Disponible
+                                    </span>
+
+                                </td>
+
+                                <td class="actions">
+
+                                    <i class="bi bi-eye"></i>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash3"></i>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Salsa bechamel
+                                </td>
+
+                                <td>
+                                    Salsas
+                                </td>
+
+                                <td>
+                                    L-250706-08
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    kg
+                                </td>
+
+                                <td>
+                                    08/07/2026
+                                </td>
+
+                                <td>
+
+                                    <span class="status expired">
+                                        Vencido
+                                    </span>
+
+                                </td>
+
+                                <td class="actions">
+
+                                    <i class="bi bi-eye"></i>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash3"></i>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+
+                    </table>
+
+
+                </div>
+
+                <div class="table-footer">
+
+
+                    <span class="showing">
+
+                        Mostrando 1 a 7 de 7 productos
+
+                    </span>
+
+
+                    <div class="pagination">
+
+
+                        <button>
+                            &lt;&lt;
+                        </button>
+
+                        <button>
+                            &lt;
+                        </button>
+
+                        <button class="current">
+                            1
+                        </button>
+
+                        <button>
+                            &gt;
+                        </button>
+
+                        <button>
+                            &gt;&gt;
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+
+
+</body>
+
+</html>

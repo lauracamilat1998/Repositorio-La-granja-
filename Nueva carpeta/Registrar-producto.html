@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registrar Producto - La Granja</title>
+
+    
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    
+    <link
+        rel="stylesheet"
+        href="css/producto.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+
+        <aside class="sidebar">
+
+
+            <div class="logo-container">
+
+                <img
+                    src="img/logo.png"
+                    alt="Logo La Granja"
+                    class="logo"
+                >
+
+            </div>
+
+
+            <nav class="menu">
+
+
+                <a href="dashboard2.html" class="menu-item">
+
+                    <i class="bi bi-house-door"></i>
+
+                    <span>
+                        dashboard
+                    </span>
+
+                </a>
+
+                <a href="#" class="menu-item active">
+
+                    <i class="bi bi-box-seam"></i>
+
+                    <span>
+                        inventario
+                    </span>
+
+                </a>
+
+                <a href="#" class="menu-item">
+
+                    <i class="bi bi-cart3"></i>
+
+                    <span>
+                        produccion
+                    </span>
+
+                </a>
+
+                <a href="#" class="menu-item">
+
+                    <i class="bi bi-qr-code-scan"></i>
+
+                    <span>
+                        Trazabilidad
+                    </span>
+
+                </a>
+
+                <a href="#" class="menu-item">
+
+                    <i class="bi bi-card-list"></i>
+
+                    <span>
+                        Reportes
+                    </span>
+
+                </a>
+
+
+            </nav>
+
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+
+                <div class="user-area">
+
+
+                    <i class="bi bi-bell"></i>
+
+
+                    <i class="bi bi-person-lines-fill"></i>
+
+
+                    <div class="user-info">
+
+                        <strong>
+                            Administrador
+                        </strong>
+
+                        <span>
+                            admin
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+            <div class="content">
+
+
+                <h5 class="page-title">
+
+                    REGISTRAR NUEVO PRODUCTO
+
+                </h5>
+
+                <div class="breadcrumb-custom">
+
+                    <strong>
+                        Inventario
+                    </strong>
+
+                    <span>
+                        &gt;
+                    </span>
+
+                    <span>
+                        Registrar Producto
+                    </span>
+
+                </div>
+
+                <div class="form-container">
+
+
+                    <form>
+
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+
+
+                                <!-- NOMBRE -->
+
+                                <div class="form-group">
+
+                                    <label for="nombre">
+
+                                        Nombre del producto
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="nombre"
+                                        class="form-control"
+                                        placeholder="Ej. papa criolla"
+                                    >
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="categoria">
+
+                                        Categoría
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <select
+                                        id="categoria"
+                                        class="form-select"
+                                    >
+
+                                        <option selected>
+                                            Select categoría
+                                        </option>
+
+                                        <option>
+                                            Carnes
+                                        </option>
+
+                                        <option>
+                                            Verduras
+                                        </option>
+
+                                        <option>
+                                            Lácteos
+                                        </option>
+
+                                        <option>
+                                            Salsas
+                                        </option>
+
+                                        <option>
+                                            Otros
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="proveedor">
+
+                                        Proveedor
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="proveedor"
+                                        class="form-control"
+                                        placeholder="Ej. proveedor La Granja"
+                                    >
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="unidad">
+
+                                        Unidad de medida
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <select
+                                        id="unidad"
+                                        class="form-select"
+                                    >
+
+                                        <option selected>
+                                            Select unidad
+                                        </option>
+
+                                        <option>
+                                            Kilogramos
+                                        </option>
+
+                                        <option>
+                                            Gramos
+                                        </option>
+
+                                        <option>
+                                            Litros
+                                        </option>
+
+                                        <option>
+                                            Unidades
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="lote">
+
+                                        Número de lote
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="lote"
+                                        class="form-control"
+                                        placeholder="Ej. L 250709-01"
+                                    >
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-md-6">
+
+
+                                <!-- CANTIDAD -->
+
+                                <div class="form-group">
+
+                                    <label for="cantidad">
+
+                                        Cantidad
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <input
+                                        type="number"
+                                        id="cantidad"
+                                        class="form-control"
+                                        placeholder="Ej. 10"
+                                    >
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="produccion">
+
+                                        Fecha de producción
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <input
+                                        type="date"
+                                        id="produccion"
+                                        class="form-control"
+                                    >
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="vencimiento">
+
+                                        Fecha de vencimiento
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <input
+                                        type="date"
+                                        id="vencimiento"
+                                        class="form-control"
+                                    >
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="origen">
+
+                                        Origen
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="origen"
+                                        class="form-control"
+                                        placeholder="Ej. agrícola local"
+                                    >
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="observaciones">
+
+                                        Observaciones
+
+                                    </label>
+
+                                    <textarea
+                                        id="observaciones"
+                                        class="form-control"
+                                        placeholder="Escribe una observación"
+                                        rows="2"
+                                    ></textarea>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="buttons">
+
+
+                            <button
+                                type="button"
+                                class="btn-cancel"
+                            >
+
+                                Cancelar
+
+                            </button>
+
+
+                            <button
+                                type="submit"
+                                class="btn-save"
+                            >
+
+                                Guardar producto
+
+                            </button>
+
+
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+
+
+</body>

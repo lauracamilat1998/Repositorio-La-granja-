@@ -1,0 +1,576 @@
+body {
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f8dc;
+
+    color: #333;
+
+}
+
+.dashboard {
+
+    display: flex;
+
+    min-height: 100vh;
+
+}
+
+.sidebar {
+
+    width: 88px;
+
+    min-height: 100vh;
+
+    background-color: #5c9f3f;
+
+    color: white;
+
+    flex-shrink: 0;
+
+}
+.logo-container {
+
+    text-align: center;
+
+    padding: 8px 4px;
+
+    background-color: #5c9f3f;
+
+}
+
+
+.logo {
+
+    width: 78px;
+
+}
+
+.menu {
+
+    padding-top: 4px;
+
+}
+
+
+.menu-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 8px 3px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+}
+
+
+.menu-item i {
+
+    font-size: 16px;
+
+}
+
+
+.menu-item:hover {
+
+    background-color: #4d8b35;
+
+    color: white;
+
+}
+
+
+.menu-item.active {
+
+    background-color: #4d8b35;
+
+}
+
+.main-content {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+.topbar {
+
+    height: 57px;
+
+    background-color: #f7fbdc;
+
+    border-bottom: 1px solid #dce1bc;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding-right: 65px;
+
+}
+
+
+.user-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.user-area > i {
+
+    font-size: 18px;
+
+}
+
+
+.user-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.1;
+
+}
+
+
+.user-info strong {
+
+    font-size: 10px;
+
+}
+
+
+.user-info span {
+
+    font-size: 10px;
+
+}
+
+.content {
+
+    padding: 8px 7px;
+
+}
+.page-header {
+
+    font-size: 9px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.breadcrumb-text {
+
+    color: #333;
+
+}
+
+
+.separator {
+
+    margin: 0 3px;
+
+}
+
+.filters {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 10px;
+
+}
+
+.search-box {
+
+    width: 97px;
+
+    height: 19px;
+
+    background-color: white;
+
+    border: 1px solid #777;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 5px;
+
+}
+
+
+.search-box i {
+
+    font-size: 10px;
+
+}
+
+
+.search-box input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 9px;
+
+    padding-left: 3px;
+
+}
+
+
+.search-box input::placeholder {
+
+    color: #333;
+
+}
+
+.filter-select {
+
+    width: 115px;
+
+    height: 20px;
+
+    font-size: 8px;
+
+    border: 1px solid #777;
+
+    background-color: white;
+
+    border-radius: 2px;
+
+}
+
+
+.status-filter {
+
+    width: 117px;
+
+}
+
+.new-product {
+
+    width: 97px;
+
+    height: 20px;
+
+    background-color: #55b72c;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    border-radius: 2px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+
+}
+
+
+.new-product i {
+
+    font-size: 13px;
+
+}
+
+
+.new-product:hover {
+
+    background-color: #439b21;
+
+    color: white;
+
+}
+
+.table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+.inventory-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    font-size: 8px;
+
+}
+
+.inventory-table thead th {
+
+    background-color: #e5e7e1;
+
+    border: 1px solid #bfc2bb;
+
+    padding: 5px 4px;
+
+    text-align: left;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+.inventory-table tbody td {
+
+    border: 1px solid #c5c8c1;
+
+    padding: 4px;
+
+    height: 19px;
+
+    white-space: nowrap;
+
+}
+
+
+.inventory-table tbody tr:hover {
+
+    background-color: #f4f8e6;
+
+}
+
+.status {
+
+    display: block;
+
+    text-align: center;
+
+    padding: 4px 3px;
+
+    margin: -4px;
+
+    font-size: 8px;
+
+}
+
+
+/* DISPONIBLE */
+
+.status.available {
+
+    background-color: #8de23d;
+
+    color: #1c470e;
+
+}
+
+
+/* POR VENCER */
+
+.status.warning {
+
+    background-color: #ffe96a;
+
+    color: #665500;
+
+}
+
+
+/* VENCIDO */
+
+.status.expired {
+
+    background-color: #ff5757;
+
+    color: white;
+
+}
+
+.actions {
+
+    text-align: center;
+
+    white-space: nowrap;
+
+}
+
+
+.actions i {
+
+    font-size: 12px;
+
+    margin: 0 3px;
+
+    cursor: pointer;
+
+}
+
+
+.actions i:first-child {
+
+    color: #333;
+
+}
+
+
+.actions i:nth-child(2) {
+
+    color: #333;
+
+}
+
+
+.actions i:last-child {
+
+    color: #f15b35;
+
+}
+
+
+.actions i:hover {
+
+    transform: scale(1.15);
+
+}
+
+.table-footer {
+
+    margin-top: 5px;
+
+    min-height: 31px;
+
+    background-color: white;
+
+    border: 1px solid #888;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 4px 7px;
+
+}
+
+
+/* TEXTO */
+
+.showing {
+
+    font-size: 8px;
+
+    color: #55a832;
+
+    font-weight: bold;
+
+}
+
+.pagination {
+
+    display: flex;
+
+    gap: 5px;
+
+}
+
+
+.pagination button {
+
+    width: 19px;
+
+    height: 18px;
+
+    background-color: white;
+
+    border: 1px solid #999;
+
+    border-radius: 2px;
+
+    font-size: 9px;
+
+    padding: 0;
+
+}
+
+
+.pagination button.current {
+
+    background-color: white;
+
+}
+
+
+.pagination button:hover {
+
+    background-color: #e9f5d8;
+
+}
+
+
+@media (max-width: 800px) {
+
+    .filters {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .sidebar {
+
+        width: 75px;
+
+    }
+
+
+    .logo {
+
+        width: 65px;
+
+    }
+
+}
